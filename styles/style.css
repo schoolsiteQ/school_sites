@@ -1,0 +1,130 @@
+body {
+    margin: 0; /* Убираем отступы по умолчанию */
+    padding: 0; /* Убираем паддинги по умолчанию */
+    background-color: rgba(245, 222, 179, 0.507);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 0px 5px 15px black;;
+    font-family: 'Cascadia Code lite', monospace;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    text-shadow: 0px 5px 15px black;;
+    font-family: 'Cascadia Code lite', monospace;
+}
+
+
+header {
+    background-size: cover;
+    background-position: center center;
+    background-image: url("../images/background.png");
+    
+    height: 30%;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+img {
+    width: 15vw;
+    max-width: 98%; /* Адаптивное изображение */
+    height: auto; /* Сохранение пропорций изображения */
+}
+
+p {
+    text-align: left;
+    max-width: 70%;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.2vw;
+    text-decoration: normal;
+    vertical-align: baseline;
+}
+
+.a_t {
+    text-decoration: none; /* Убирает подчеркивание */
+    color: rgb(105, 41, 255); /* Устанавливает цвет ссылки равным цвету родительского элемента */
+    font-family: "Ubuntu", sans-serif;
+    position: relative;
+    font-weight: 300;
+    font-size: 1.2vw;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.a_t:hover:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -3px;
+    height: 2px;
+    /* Высота линии */
+    background-color: rgb(105, 41, 255);
+    /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;
+    /* Время эффекта */
+}
+
+.a_t:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    /* Высота линии */
+    background-color: rgb(105, 41, 255);
+    /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s;
+    /* Время эффекта */
+}
+
+.container {
+    margin-top: 2%;
+    margin-left: 5%;
+    display: flex;
+    align-items: flex-start; /* Начало текста с верхней части изображения */
+}
+
+.image {
+    margin-right: 20px; /* Отступ между изображением и текстом */
+}
+
+.teacher_photo {
+    display: block;
+    width: 70%; /* Установка фиксированной ширины для фотографии */
+    height: auto; /* Сохранение пропорций изображения */
+}
+
+/* Вы можете также добавить стили для text, если нужно */
+.text {
+    flex-grow: 1; /* Позволяет тексту занимать оставшееся пространство */
+}
+
+.link_container {
+    width: 20%;
+    border: 3px solid black;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 7.5px;
+    float: left;
+    margin: 1%;
+    padding-left: 2%;
+    color: rgb(3, 3, 3);
+    background-color: wheat;
+    margin-left: 5%;
+}
